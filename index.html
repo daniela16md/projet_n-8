@@ -8,68 +8,62 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	
-	<script type="aplication/ld+json">
+	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": ["LocalBusiness", "Photographer"],
-			"name": "Nina Carducci Photography",
-			"addres": {
-				"@type": "PostalAdress",
-				"streetAdress": "68 avenue Alsace-Lorraine",
-				"adressLocality": "Bordeaux"
-				"postaleCode": "33200",
-				"adressCountry": "FR"
+			"@type": "Service",
+			"serviceType": "Photographie professionnelle",
+			"provider": {
+				"@type": "Organization",
+				"name": "Nina Carducci Photography",
+				"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+				"telephone": "+33-5-56-67-78-89",
+				"url": "https://daniela16md.github.io/projet_n-8/"
 			},
-			"telephone": "+33-5-56-67-78-89",
-			"openingHours": "Mo-Fr 10:00-19:00",
-			"url":"https://daniela16md.github.io/projet_n-8/",
 			"offers": [
 				{
 				"@type": "Offer",
-				"name": "Shooting photo",
-				"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Shooting photo",
+					"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos."
+				},
 				"priceCurrency": "EUR",
 				"price": "350.00",
-				"itemCondition": "https://schema.org/NewCondition",
-				"additionalType": "https://schema.org/Service",
-				"serviceType": "Shooting photo",
-				"provider": {
-					"@type": "Organization",
-					"name": "Nina Carducci Photography"
-				}
+				"itemCondition": "https://schema.org/NewCondition"
 				},
 				{
 				"@type": "Offer",
-				"name": "Retouches",
-				"description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications.",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Retouches",
+					"description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications."
+				},
 				"priceCurrency": "EUR",
 				"price": "50.00",
-				"itemCondition": "https://schema.org/NewCondition",
-				"additionalType": "https://schema.org/Service",
-				"serviceType": "Retouches photo",
-				"provider": {
-					"@type": "Organization",
-					"name": "Nina Carducci Photography"
-				}
+				"itemCondition": "https://schema.org/NewCondition"
 				},
 				{
 				"@type": "Offer",
-				"name": "Album photos",
-				"description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.",
+				"itemOffered": {
+					"@type": "Product",
+					"name": "Album photos",
+					"description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé."
+				},
 				"priceCurrency": "EUR",
 				"price": "400.00",
-				"itemCondition": "https://schema.org/NewCondition",
-				"additionalType": "https://schema.org/Product",
-				"productID": "Album A4",
-				"provider": {
-					"@type": "Organization",
-					"name": "Nina Carducci Photography"
-				}
+				"itemCondition": "https://schema.org/NewCondition"
 				}
 			]
-
 		}
 	</script>
+		
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
